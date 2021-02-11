@@ -1,0 +1,6 @@
+{
+   "certificates": [
+       {"name": "nebosh", "src": "./certificates/nebosh.jpg"},
+       {"name": "Ho", "src": "./certificates/nebosh.jpg"}
+]
+}
