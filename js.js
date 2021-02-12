@@ -2,7 +2,7 @@ function CTHm(){
  // adding the certificate 
  let mainDiv = document.querySelector('main');
 
- function addQulification (certificateName ,certificateSrc ){
+ function addQulification (certificateName ,certificateSrc,description = certificateName){
  const quali = document.createElement('div');
  quali.className = 'qualificationContainer';
 
@@ -10,10 +10,8 @@ function CTHm(){
  const title = document.createElement('div');
  let destitle = document.createElement('h3');
  const paragraphDescription = document.createElement('p');
- paragraphDescription.innerText = "This is a description of the certificate"
- const btn = document.createElement('div');
- btn.innerText = "VIEW"
- btn.id = 'btn'
+ paragraphDescription.innerText = description;
+
  
  title.className = "des";
 
@@ -31,7 +29,7 @@ function CTHm(){
  function visib (ele){
      setTimeout(
          ()=>{
-            ele.target.style.visibility = "visible";
+            title.style.visibility = "visible";
      console.log('I worked!') 
          }, 5000
      )
@@ -44,19 +42,20 @@ function CTHm(){
  
 };
 
-console.log('endFile')
+//console.log('endFile')
 //fetching the json file
 
  fetch ('json.json').then(res => res.json()).then (
  data => {
      console.log(data.certificates)
      data.certificates.forEach(element => {
-         addQulification(element.name, element.src)
+         addQulification(element.name, element.src, element.description)
      });
  }) .catch ((e)=>console.log(e.message));
 // end of adding certificate file;
 
 // event listners for view
+
 
 
 

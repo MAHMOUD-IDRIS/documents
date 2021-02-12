@@ -10,6 +10,9 @@ h1 {
     font-size: 1.5em;
     margin-top: 80px;
 }
+h3 {
+    font-size: 1.5em;
+}
 p {
     font-size: 14px;
 }
@@ -47,17 +50,16 @@ header {
     padding-left: 1em;
     font-size: 1em;
     color: #faeaead5;
-    width: 80%;
-          
+    width: 80%;     
 }
 
 header .mahmoud {
    width: 200px;
    position: absolute;
    opacity: 0.6;
-   
 }
-main {
+
+#main {
     
     display: flex;
     flex-wrap: wrap;
@@ -74,25 +76,78 @@ main {
     margin: auto;
     text-align: center;
     margin-top: 20px;
-    border-radius: 20px;
-    
-    
+    border-radius: 20px;    
 }
 .qualificationContainer img {
     width: 100%;    
 }
 .qualificationContainer .des {
-background-color: rgba(0, 0, 0, 0.7);
-position: absolute;
-height: 100%;
-color: white;
-width: 100%;
+    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    color: white;
+    width: 100%;
     }
+
+.des p, .des h3 {
+    padding: 0 1.5em;
+    line-height: 1.5em;
+
+}
+section {
+    width: 250px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    
+}
+
+.award {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    color: white;
+    font-weight: lighter;
+}
+.slideBar {
+    width: 1500px;
+    height:165px;
+    margin-top: 15px;
+    position: relative;
+    transition: all 5ms ease;
+    border-radius: 20px; 
+    display: flex;  
+    overflow: hidden; 
+    animation: slideAnimation 10s infinite ease ;
+}
+ section img {
+    width: 250px;
+ }
+@-webkit-keyframes slideAnimation {
+    0% {right: 0px}
+    25% {right: 250px}
+    50% {right: 500px}
+    75% {right: 750px}
+    100% {right: 1000px}
+}
+
+
+.slideBar h4 {
+   
+}
+  
 @media only screen and (min-width: 700px ){
-   main {
+   #main {
        width: 80%;
        margin: auto;
        justify-content: space-around;
+       display: flex;
+       flex-direction: column;
    }
     .qualificationContainer {
    
@@ -106,3 +161,4 @@ width: 100%;
         
     }
 }
+

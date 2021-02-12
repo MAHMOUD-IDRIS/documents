@@ -1,6 +1,30 @@
 {
    "certificates": [
-       {"name": "nebosh", "src": "./certificates/nebosh.jpg"},
-       {"name": "Ho", "src": "./certificates/nebosh.jpg"}
+         {
+        "name": "Adminstrative Skills",
+         "src": "./certificates/adminskills.jpg",
+         "description": "Functional admistrative skills such  as Customer service, Marketing and sales, and Report wirting..."
+    },
+    {
+        "name": "Electrical Installations",
+         "src": "./certificates/Elec.jpg",
+         "description": "Electrical installations"
+    },
+    {
+        "name": "Fire Fighting Systems",
+         "src": "./certificates/fireFighting.jpg",
+         "description": "Designing and implimenting fire fighting systems"
+    },
+    {
+        "name": "Fire Fighting Systems",
+         "src": "./certificates/Firechar.jpg",
+         "description": "Designing and implimenting fire fighting systems"
+    },
+    {
+        "name": "Nebosh IGC",
+         "src": "./certificates/nebosh.jpg",
+         "description": "It's an international qualification in occupational health and safety."
+    }
+    
 ]
 }
