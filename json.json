@@ -24,6 +24,17 @@
         "name": "Nebosh IGC",
          "src": "./certificates/nebosh.jpg",
          "description": "It's an international qualification in occupational health and safety."
+    },
+    {
+        "name": "Hyraulic systems",
+         "src": "./certificates/hyraulic.jpg",
+         "description": "Mechanical Hyraulic systems"
+    }
+    ,
+    {
+        "name": "Construction Management",
+         "src": "./certificates/courseraCM.jpg",
+         "description": "Construction management"
     }
     
 ]
