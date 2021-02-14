@@ -10,19 +10,22 @@ function CTHm(){
  const title = document.createElement('div');
  let destitle = document.createElement('h3');
  const paragraphDescription = document.createElement('p');
+ const view = document.createElement('p');
  paragraphDescription.innerText = description;
-
+view.innerText = 'tap to view';
+view.style = "position: absolute; color: black; background-color: rgba(255,255,255,0.5); bottom: 0px; margin: auto;"; 
  
  title.className = "des";
 
  destitle.textContent = certificateName;
  title.appendChild(destitle);
  title.appendChild(paragraphDescription);
- 
+ title.appendChild(view);
      
  img.src = certificateSrc;
  quali.appendChild(img);
  quali.appendChild(title);
+ 
  
  mainDiv.appendChild(quali);
 
@@ -56,8 +59,6 @@ function CTHm(){
 
 // event listners for view
 
-
-
-
 };
 CTHm();
+

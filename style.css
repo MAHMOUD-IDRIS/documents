@@ -11,7 +11,7 @@ h1 {
     margin-top: 80px;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 p {
     font-size: 14px;
@@ -89,6 +89,7 @@ header .mahmoud {
     height: 100%;
     color: white;
     width: 100%;
+    overflow: hidden;
     }
 
 .des p, .des h3 {
@@ -137,8 +138,10 @@ section {
 }
 
 
-.slideBar h4 {
-   
+h4 {
+   font-size: 1.2em;
+   line-height: 2em;
+   font-weight: lighter;
 }
   
 @media only screen and (min-width: 700px ){
@@ -162,3 +165,17 @@ section {
     }
 }
 
+.computerSkills {
+    width: 100%;
+    display: grid;
+    grid-template: 50px 50px repeat(2, 1fr) / repeat(3, 1fr)
+}
+.computerSkills h4 , p{
+    grid-column: 1 / 4;
+}
+.computerSkills p {
+
+}
+figure img {
+    width: 50px;
+}
